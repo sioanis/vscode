@@ -312,10 +312,7 @@ export interface ISelectionHandleState {
 
 export interface ISelectionIndexState {
 	kind: SelectionStateType.Index;
-
-	/**
-	 * [primarySelection, ...secondarySelections]
-	 */
+	focus: ICellRange;
 	selections: ICellRange[];
 }
 
