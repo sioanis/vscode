@@ -676,7 +676,7 @@ export interface IEditor extends editorCommon.ICompositeCodeEditor {
 	readonly onDidFocusEditorWidget: Event<void>;
 	readonly onDidChangeVisibleRanges: Event<void>;
 	readonly onDidChangeSelection: Event<void>;
-	getSelection(): ICellRange | undefined;
+	getFocus(): ICellRange | undefined;
 	getSelections(): ICellRange[];
 	visibleRanges: ICellRange[];
 	textModel?: NotebookTextModel;
